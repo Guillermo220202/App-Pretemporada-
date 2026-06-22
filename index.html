@@ -21,8 +21,6 @@
   body{font-family:-apple-system,BlinkMacSystemFont,'Inter',sans-serif;background:var(--gray1);color:var(--navy);min-height:100vh;max-width:480px;margin:0 auto;overflow-x:hidden}
   button{cursor:pointer;font-family:inherit;border:none}
   input{font-family:inherit;outline:none}
-
-  /* HEADER */
   #header{background:var(--navy);padding:env(safe-area-inset-top,16px) 16px 0;position:sticky;top:0;z-index:100}
   .header-top{display:flex;align-items:center;gap:12px;padding-bottom:12px}
   .logo{background:#fff;border-radius:10px;width:42px;height:42px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
@@ -31,20 +29,11 @@
   .progress-bar-wrap{background:#0f0f1a;border-radius:4px;height:5px;overflow:hidden;margin-bottom:6px}
   .progress-fill{background:linear-gradient(90deg,var(--blue),var(--purple),var(--amber));height:100%;border-radius:4px;transition:width .5s}
   .progress-labels{display:flex;justify-content:space-between;font-size:9px;color:#475569;padding-bottom:10px}
-
-  /* NAV */
   .nav{display:flex;gap:3px;background:#0f0f1a;border-radius:8px;padding:3px;margin-bottom:0}
   .nav-btn{flex:1;padding:7px 2px;border-radius:6px;background:transparent;color:#64748b;font-weight:700;font-size:10px;transition:all .2s}
   .nav-btn.active{background:#fff;color:var(--navy)}
-
-  /* CONTENT */
   #content{padding:16px 14px calc(80px + var(--safe-bottom))}
-
-  /* CARDS */
   .card{background:#fff;border:1px solid var(--gray2);border-radius:var(--radius);padding:14px 16px;margin-bottom:10px}
-  .card-bordered{border-left:4px solid var(--blue)}
-
-  /* HERO */
   .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%);border-radius:16px;padding:20px;margin-bottom:16px;color:#fff}
   .hero-goal{font-size:30px;font-weight:900;letter-spacing:-1px}
   .hero-sub{font-size:14px;color:#cbd5e1;margin-top:2px}
@@ -55,8 +44,6 @@
   .hero-stat-val.g{color:#34d399}
   .hero-stat-label{font-size:10px;color:#94a3b8;margin-top:2px}
   .divider{width:1px;background:#1e2d4a}
-
-  /* PHASES */
   .phase-card{background:#fff;border:2px solid rgba(59,130,246,.2);border-left:4px solid var(--blue);border-radius:var(--radius);padding:14px;margin-bottom:8px;display:flex;align-items:center;gap:12px;cursor:pointer;transition:transform .15s}
   .phase-card:active{transform:scale(.98)}
   .phase-card.p2{border-color:rgba(139,92,246,.2);border-left-color:var(--purple)}
@@ -66,21 +53,15 @@
   .phase-dates{font-size:11px;color:var(--gray4)}
   .phase-focus{font-size:11px;color:var(--gray4);margin-top:2px}
   .chevron{color:#adb5bd;font-size:18px;margin-left:auto}
-
-  /* TIP CARD */
   .tip-row{display:flex;gap:10px;align-items:flex-start;background:#fff;border:1px solid var(--gray2);border-radius:10px;padding:12px;margin-bottom:7px}
   .tip-icon{font-size:20px;flex-shrink:0}
   .tip-title{font-weight:700;font-size:13px}
   .tip-text{font-size:12px;color:var(--gray4);margin-top:1px}
-
-  /* PHASE SELECTOR */
   .phase-tabs{display:flex;gap:6px;margin-bottom:16px}
   .phase-tab{flex:1;padding:10px 4px;border-radius:10px;border:2px solid var(--gray3);background:#fff;color:var(--gray4);font-weight:700;font-size:11px;transition:all .2s}
   .phase-tab.active-1{border-color:var(--blue);background:var(--blue);color:#fff}
   .phase-tab.active-2{border-color:var(--purple);background:var(--purple);color:#fff}
   .phase-tab.active-3{border-color:var(--amber);background:var(--amber);color:#fff}
-
-  /* PHASE INFO */
   .phase-info{border-radius:14px;padding:16px;margin-bottom:16px}
   .phase-info.ph1{background:#eff6ff;border:2px solid var(--blue)}
   .phase-info.ph2{background:#f5f3ff;border:2px solid var(--purple)}
@@ -88,23 +69,17 @@
   .phase-info-title{font-weight:800;font-size:16px;color:var(--navy)}
   .phase-info-dates{font-size:12px;color:var(--gray4);margin-top:2px}
   .phase-info-focus{font-size:13px;color:var(--gray5);margin-top:8px;line-height:1.5}
-
-  /* WEEKLY GRID */
   .week-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-top:12px}
   .wday{text-align:center;border-radius:7px;padding:8px 2px;font-size:10px;font-weight:600}
   .wday.on{background:var(--navy);color:#fff}
   .wday.off{background:var(--gray2);color:#adb5bd;border:1px solid var(--gray3)}
   .wday-label{font-size:12px;margin-bottom:4px}
   .wday-name{font-size:8px;line-height:1.3}
-
-  /* WORKOUT TABS */
   .workout-tabs{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}
   .wt-btn{padding:7px 12px;border-radius:18px;border:2px solid var(--gray3);background:#fff;color:var(--gray4);font-weight:600;font-size:11px}
   .wt-btn.active{border-color:var(--blue);background:var(--blue);color:#fff}
   .wt-btn.active.ph2{border-color:var(--purple);background:var(--purple)}
   .wt-btn.active.ph3{border-color:var(--amber);background:var(--amber)}
-
-  /* EXERCISE */
   .ex-card{background:#fff;border:1px solid var(--gray2);border-radius:10px;margin-bottom:7px;overflow:hidden}
   .ex-header{display:flex;align-items:center;padding:12px 14px;gap:10px;cursor:pointer}
   .ex-num{background:var(--navy);color:#fff;border-radius:6px;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0}
@@ -114,22 +89,21 @@
   .ex-tip.open{display:block}
   .ex-arrow{color:#adb5bd;font-size:14px;transition:transform .2s}
   .ex-arrow.open{transform:rotate(180deg)}
-
-  /* NUTRITION */
+  .prog-badge{display:inline-block;padding:2px 8px;border-radius:8px;font-size:10px;font-weight:700;margin-bottom:6px}
+  .prog-f1{background:#dbeafe;color:#1d4ed8}
+  .prog-f2{background:#ede9fe;color:#6d28d9}
+  .prog-f3{background:#fef3c7;color:#92400e}
   .nutr-tabs{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
   .nt-btn{padding:8px 14px;border-radius:18px;border:2px solid var(--gray3);background:#fff;color:var(--gray4);font-weight:600;font-size:12px}
   .nt-btn.active{border-color:var(--green);background:var(--green);color:#fff}
-
   .principle{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--gray2);border-radius:var(--radius);padding:14px;margin-bottom:8px}
   .p-icon{font-size:24px;flex-shrink:0}
   .p-title{font-weight:700;font-size:14px;margin-bottom:3px}
   .p-text{font-size:12px;color:var(--gray4);line-height:1.6}
-
   .meal-type-tabs{display:flex;gap:8px;margin-bottom:14px}
   .mt-btn{flex:1;padding:9px;border-radius:10px;border:2px solid var(--gray3);background:#fff;color:var(--gray4);font-weight:700;font-size:12px}
   .mt-btn.active-train{border-color:var(--purple);background:var(--purple);color:#fff}
   .mt-btn.active-rest{border-color:#64748b;background:#64748b;color:#fff}
-
   .meal-row{display:flex;gap:12px;background:#fff;border:1px solid var(--gray2);border-radius:var(--radius);padding:12px 14px;margin-bottom:8px}
   .meal-time{background:var(--gray1);border-radius:8px;padding:6px 8px;text-align:center;min-width:52px;flex-shrink:0}
   .meal-time-text{font-weight:800;font-size:13px;color:var(--navy)}
@@ -138,7 +112,6 @@
   .meal-badges{display:flex;gap:6px}
   .badge-kcal{background:#fef3c7;color:#92400e;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700}
   .badge-prot{background:#d1fae5;color:#065f46;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700}
-
   .suppl{background:#fff;border:1px solid var(--gray2);border-radius:var(--radius);padding:14px;margin-bottom:8px}
   .suppl-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px}
   .suppl-name{font-weight:700;font-size:14px}
@@ -147,41 +120,31 @@
   .badge-med{background:#f3f4f6;color:#6b7280;padding:3px 10px;border-radius:10px;font-size:10px;font-weight:700}
   .suppl-when{font-size:11px;color:var(--gray4);margin-bottom:4px}
   .suppl-note{font-size:12px;color:var(--gray5);line-height:1.5}
-
-  /* SCHEDULE */
   .month-card{background:#fff;border-radius:14px;padding:16px;margin-bottom:12px}
   .month-badge{display:inline-block;color:#fff;border-radius:8px;padding:3px 12px;font-weight:800;font-size:14px;margin-bottom:10px}
   .sched-row{display:flex;gap:8px;align-items:flex-start;font-size:13px;margin-bottom:6px}
   .sched-label{font-weight:600;min-width:90px;flex-shrink:0}
   .sched-val{color:var(--gray4)}
   .sched-note{border-radius:8px;padding:10px 12px;margin-top:8px;font-size:12px;line-height:1.5}
-
-  /* PROGRESS */
   .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:16px}
   .stat-box{background:#fff;border-radius:var(--radius);padding:14px;text-align:center}
   .stat-val{font-weight:800;font-size:22px}
   .stat-label{font-size:10px;color:var(--gray4);margin-top:2px}
-
   .input-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
   .inp{flex:1;min-width:80px;padding:10px 12px;border-radius:8px;border:1px solid var(--gray3);font-size:14px;background:#fff}
   .save-btn{padding:10px 16px;background:var(--navy);color:#fff;border-radius:8px;font-weight:700;font-size:13px}
-
   .entry-row{display:flex;justify-content:space-between;align-items:center;background:#fff;border:1px solid var(--gray2);border-radius:10px;padding:12px 14px;margin-bottom:7px}
   .entry-date{font-weight:600;font-size:13px}
   .entry-note-text{font-size:11px;color:var(--gray4)}
   .entry-weight{font-weight:800;font-size:18px;color:var(--purple)}
-
-  /* INSTALL BANNER */
   #install-banner{display:none;position:fixed;bottom:calc(60px + var(--safe-bottom));left:50%;transform:translateX(-50%);background:var(--navy);color:#fff;padding:12px 18px;border-radius:14px;font-size:13px;font-weight:600;box-shadow:0 8px 24px rgba(0,0,0,.3);z-index:200;max-width:360px;width:calc(100% - 32px);align-items:center;gap:12px}
   #install-banner.show{display:flex}
   #install-btn{background:var(--blue);color:#fff;border:none;border-radius:8px;padding:8px 14px;font-weight:700;font-size:13px;cursor:pointer;white-space:nowrap}
   #install-dismiss{background:none;border:none;color:#94a3b8;font-size:18px;cursor:pointer;margin-left:auto}
-
   .info-box{border-radius:10px;padding:13px;font-size:13px;line-height:1.6}
   .info-green{background:#f0fdf4;border:1px solid #bbf7d0;color:#166534}
   .info-yellow{background:#fffbeb;border:1px solid #fde68a;color:#92400e}
   .info-blue{background:#eff6ff;border:1px solid #bfdbfe;color:#1e40af}
-
   .section-title{font-weight:800;font-size:15px;color:var(--navy);margin-bottom:10px;margin-top:4px}
 </style>
 </head>
@@ -212,7 +175,6 @@
 
 <div id="content">
 
-<!-- ======== TAB: PLAN ======== -->
 <div id="tab-plan">
   <div class="hero">
     <div style="font-size:11px;color:#94a3b8;font-weight:600;letter-spacing:1px;margin-bottom:4px">OBJETIVO PRINCIPAL</div>
@@ -226,49 +188,18 @@
       <div class="hero-stat"><div class="hero-stat-val g">2750</div><div class="hero-stat-label">kcal/día</div></div>
     </div>
   </div>
-
   <div class="section-title">Las 3 fases de tu pretemporada</div>
-
-  <div class="phase-card" onclick="goPhase(1)">
-    <div class="phase-icon">🏗️</div>
-    <div>
-      <div class="phase-name">Fase 1 — Base</div>
-      <div class="phase-dates">23 Jun – 13 Jul · Semanas 1–3</div>
-      <div class="phase-focus">Adaptación neuromuscular y técnica de los básicos</div>
-    </div>
-    <div class="chevron">›</div>
-  </div>
-  <div class="phase-card p2" onclick="goPhase(2)">
-    <div class="phase-icon">💪</div>
-    <div>
-      <div class="phase-name">Fase 2 — Hipertrofia</div>
-      <div class="phase-dates">14 Jul – 10 Ago · Semanas 4–8</div>
-      <div class="phase-focus">Máximo estímulo con volumen y progresión de carga</div>
-    </div>
-    <div class="chevron">›</div>
-  </div>
-  <div class="phase-card p3" onclick="goPhase(3)">
-    <div class="phase-icon">⚡</div>
-    <div>
-      <div class="phase-name">Fase 3 — Potencia</div>
-      <div class="phase-dates">11 Ago – 1 Sep · Semanas 9–11</div>
-      <div class="phase-focus">Integrar fuerza con potencia específica de fútbol</div>
-    </div>
-    <div class="chevron">›</div>
-  </div>
-
+  <div class="phase-card" onclick="goPhase(1)"><div class="phase-icon">🏗️</div><div><div class="phase-name">Fase 1 — Base</div><div class="phase-dates">23 Jun – 13 Jul · Semanas 1–3</div><div class="phase-focus">Técnica, adaptación y construir los cimientos</div></div><div class="chevron">›</div></div>
+  <div class="phase-card p2" onclick="goPhase(2)"><div class="phase-icon">💪</div><div><div class="phase-name">Fase 2 — Hipertrofia</div><div class="phase-dates">14 Jul – 10 Ago · Semanas 4–8</div><div class="phase-focus">Máximo volumen y progresión de carga</div></div><div class="chevron">›</div></div>
+  <div class="phase-card p3" onclick="goPhase(3)"><div class="phase-icon">⚡</div><div><div class="phase-name">Fase 3 — Potencia</div><div class="phase-dates">11 Ago – 1 Sep · Semanas 9–11</div><div class="phase-focus">Fuerza + explosividad específica de fútbol</div></div><div class="chevron">›</div></div>
   <div class="section-title" style="margin-top:18px">Claves del éxito</div>
   <div class="tip-row"><div class="tip-icon">😴</div><div><div class="tip-title">Duerme 8 horas</div><div class="tip-text">El músculo crece mientras duermes, no en el gym.</div></div></div>
   <div class="tip-row"><div class="tip-icon">📊</div><div><div class="tip-title">Superávit calórico</div><div class="tip-text">+300-500 kcal sobre tu mantenimiento cada día.</div></div></div>
   <div class="tip-row"><div class="tip-icon">📈</div><div><div class="tip-title">Progresión de carga</div><div class="tip-text">Cada semana intenta mejorar peso o repeticiones.</div></div></div>
   <div class="tip-row"><div class="tip-icon">🗓️</div><div><div class="tip-title">Constancia > Intensidad</div><div class="tip-text">3 días al gym siempre gana a 6 días seguidos y luego nada.</div></div></div>
-
-  <div class="info-box info-yellow" style="margin-top:14px">
-    📋 <strong>Cuando tengas el planning de tu entrenador</strong>, súbelo aquí y lo integro con este plan para que no haya solapamientos ni sobreentrenamiento.
-  </div>
+  <div class="info-box info-yellow" style="margin-top:14px">📋 <strong>Cuando tengas el planning de tu entrenador</strong>, súbelo y lo integro con este plan para que no haya solapamientos.</div>
 </div>
 
-<!-- ======== TAB: GYM ======== -->
 <div id="tab-gym" style="display:none">
   <div class="phase-tabs">
     <button class="phase-tab active-1" id="pt1" onclick="selectPhase(1)">🏗️ Fase 1</button>
@@ -278,70 +209,47 @@
   <div id="phase-content"></div>
 </div>
 
-<!-- ======== TAB: NUTRICIÓN ======== -->
 <div id="tab-nutri" style="display:none">
   <div class="nutr-tabs">
-    <button class="nt-btn active" onclick="selectNutr('principles')">Principios</button>
-    <button class="nt-btn" onclick="selectNutr('meals')">Comidas</button>
-    <button class="nt-btn" onclick="selectNutr('supplements')">Suplementos</button>
+    <button class="nt-btn active" onclick="selectNutr('principles',this)">Principios</button>
+    <button class="nt-btn" onclick="selectNutr('meals',this)">Comidas</button>
+    <button class="nt-btn" onclick="selectNutr('supplements',this)">Suplementos</button>
   </div>
   <div id="nutr-content"></div>
 </div>
 
-<!-- ======== TAB: HORARIO ======== -->
 <div id="tab-horario" style="display:none">
-  <div class="info-box info-green" style="margin-bottom:14px">
-    📅 Tu horario de trabajo está integrado mes a mes. Los días de oficina son descanso o entreno en casa/exterior.
-  </div>
+  <div class="info-box info-green" style="margin-bottom:14px">📅 Tu horario de trabajo está integrado mes a mes. Los días de oficina son descanso o entreno en casa/exterior.</div>
   <div class="month-card">
     <div class="month-badge" style="background:var(--blue)">Junio</div>
     <div class="sched-row"><span class="sched-label" style="color:#dc2626">🏢 Oficina:</span><span class="sched-val">Martes y Jueves</span></div>
     <div class="sched-row"><span class="sched-label" style="color:var(--green)">💪 Gym:</span><span class="sched-val">Lunes, Miércoles, Viernes, Sábado</span></div>
     <div class="sched-row"><span class="sched-label" style="color:var(--gray4)">🕐 Horario:</span><span class="sched-val">L-J: 9-19h · V: 9-15h</span></div>
-    <div class="sched-note" style="background:#eff6ff;color:#1e40af">
-      <strong>Fase 1:</strong> Full Body 3 días. Gym después de las 19h o por la tarde los días libres.
-    </div>
+    <div class="sched-note" style="background:#eff6ff;color:#1e40af"><strong>Fase 1:</strong> Full Body 3 días. Gym después de las 19h o por la tarde los días libres.</div>
   </div>
   <div class="month-card">
     <div class="month-badge" style="background:var(--purple)">Julio</div>
     <div class="sched-row"><span class="sched-label" style="color:#dc2626">🏢 Oficina:</span><span class="sched-val">Lunes y Miércoles</span></div>
     <div class="sched-row"><span class="sched-label" style="color:var(--green)">💪 Gym:</span><span class="sched-val">Martes, Jueves, Viernes, Sábado</span></div>
     <div class="sched-row"><span class="sched-label" style="color:var(--gray4)">🕐 Horario:</span><span class="sched-val">L-J: 9-19h · V: 9-15h</span></div>
-    <div class="sched-note" style="background:#f5f3ff;color:#5b21b6">
-      <strong>Fase 2:</strong> Split 4 días. Los días de gym cambian respecto a junio — los días libres son Mar/Jue/Vie/Sáb.
-    </div>
+    <div class="sched-note" style="background:#f5f3ff;color:#5b21b6"><strong>Fase 2:</strong> Split 4 días. Los días libres son Mar/Jue/Vie/Sáb.</div>
   </div>
   <div class="month-card">
     <div class="month-badge" style="background:var(--amber)">Agosto</div>
     <div class="sched-row"><span class="sched-label" style="color:#dc2626">🏢 Oficina:</span><span class="sched-val">Ninguno (teletrabajo)</span></div>
     <div class="sched-row"><span class="sched-label" style="color:var(--green)">💪 Gym:</span><span class="sched-val">Lunes a Sábado (máxima flexibilidad)</span></div>
     <div class="sched-row"><span class="sched-label" style="color:var(--gray4)">🕐 Horario:</span><span class="sched-val">L-V: 9-15h (teletrabajo)</span></div>
-    <div class="sched-note" style="background:#fffbeb;color:#92400e">
-      <strong>Fase 3:</strong> Máxima libertad. Gym a las 15:30h todos los días. Integración con trabajo de fútbol.
-    </div>
+    <div class="sched-note" style="background:#fffbeb;color:#92400e"><strong>Fase 3:</strong> Máxima libertad. Gym a las 15:30h todos los días.</div>
   </div>
-  <div class="info-box info-yellow">
-    🧳 <strong>Días de viaje:</strong> Cuando me confirmes las fechas, te adapto el planning con rutinas sin material o de hotel para esos días.
-  </div>
+  <div class="info-box info-yellow">🧳 <strong>Días de viaje:</strong> Cuando me confirmes las fechas, te adapto el planning con rutinas sin material o de hotel.</div>
 </div>
 
-<!-- ======== TAB: STATS ======== -->
 <div id="tab-stats" style="display:none">
   <div class="stats-grid">
-    <div class="stat-box" style="border:2px solid rgba(59,130,246,.2)">
-      <div class="stat-val" style="color:var(--blue)" id="stat-start">—</div>
-      <div class="stat-label">Peso inicial</div>
-    </div>
-    <div class="stat-box" style="border:2px solid rgba(139,92,246,.2)">
-      <div class="stat-val" style="color:var(--purple)" id="stat-current">—</div>
-      <div class="stat-label">Peso actual</div>
-    </div>
-    <div class="stat-box" style="border:2px solid rgba(16,185,129,.2)">
-      <div class="stat-val" style="color:var(--green)" id="stat-gained">+0</div>
-      <div class="stat-label">Ganado</div>
-    </div>
+    <div class="stat-box" style="border:2px solid rgba(59,130,246,.2)"><div class="stat-val" style="color:var(--blue)" id="stat-start">—</div><div class="stat-label">Peso inicial</div></div>
+    <div class="stat-box" style="border:2px solid rgba(139,92,246,.2)"><div class="stat-val" style="color:var(--purple)" id="stat-current">—</div><div class="stat-label">Peso actual</div></div>
+    <div class="stat-box" style="border:2px solid rgba(16,185,129,.2)"><div class="stat-val" style="color:var(--green)" id="stat-gained">+0</div><div class="stat-label">Ganado</div></div>
   </div>
-
   <div class="card" style="margin-bottom:14px">
     <div class="section-title" style="margin-bottom:10px">Registrar peso</div>
     <div class="input-row">
@@ -350,13 +258,11 @@
       <button class="save-btn" onclick="saveEntry()">Guardar</button>
     </div>
   </div>
-
   <div id="entries-list"></div>
 </div>
 
-</div><!-- /content -->
+</div>
 
-<!-- INSTALL BANNER -->
 <div id="install-banner">
   <span>📲 Instala la app en tu móvil</span>
   <button id="install-btn" onclick="doInstall()">Instalar</button>
@@ -364,134 +270,141 @@
 </div>
 
 <script>
-// ============================================================
-// DATA
-// ============================================================
 const PHASES = {
-  1: {
-    name:"Fase 1 — Base", emoji:"🏗️", cls:"ph1",
-    dateRange:"23 Jun – 13 Jul", weeks:"Semanas 1–3",
-    focus:"Adaptación neuromuscular y técnica de los movimientos básicos. Prioridad: aprender a ejecutar bien.",
+  1:{
+    name:"Fase 1 — Base",emoji:"🏗️",cls:"ph1",
+    dateRange:"23 Jun – 13 Jul",weeks:"Semanas 1–3",
+    focus:"Técnica y adaptación neuromuscular. Aprender a ejecutar bien cada movimiento antes de añadir carga. Dominadas con goma elástica para ir construyendo la fuerza.",
     weekDays:[
-      {idx:0,label:"L",name:"Full Body A",on:true},
-      {idx:1,label:"M",name:"Oficina",on:false},
-      {idx:2,label:"X",name:"Full Body B",on:true},
-      {idx:3,label:"J",name:"Oficina",on:false},
-      {idx:4,label:"V",name:"Full Body B",on:true},
-      {idx:5,label:"S",name:"Descanso",on:false},
-      {idx:6,label:"D",name:"Descanso",on:false},
+      {label:"L",name:"Full Body A",on:true},{label:"M",name:"Oficina",on:false},
+      {label:"X",name:"Full Body B",on:true},{label:"J",name:"Oficina",on:false},
+      {label:"V",name:"Full Body C",on:true},{label:"S",name:"Descanso",on:false},{label:"D",name:"Descanso",on:false}
     ],
     workouts:[
-      {day:"Lunes / Miércoles", type:"Full Body A", exercises:[
-        {name:"Sentadilla Goblet (mancuerna)",sets:"3",reps:"12",rest:"90s",tip:"Espalda recta, talones en el suelo. Aprende el patrón de movimiento antes de añadir peso."},
-        {name:"Press Banca con Barra",sets:"3",reps:"10",rest:"90s",tip:"Escápulas juntas y apretadas, bajada controlada 3 segundos."},
-        {name:"Remo con Mancuerna",sets:"3",reps:"10 c/lado",rest:"75s",tip:"Codo pegado al cuerpo, aprieta la espalda al subir."},
-        {name:"Peso Muerto Rumano",sets:"3",reps:"10",rest:"90s",tip:"Bisagra de cadera. No redondear la espalda baja."},
-        {name:"Press Militar Mancuernas",sets:"3",reps:"12",rest:"75s",tip:"Core activo, no arquear la espalda. Cabeza neutra."},
-        {name:"Plancha Frontal",sets:"3",reps:"30s",rest:"60s",tip:"Glúteos apretados, no dejes caer las caderas."},
+      {day:"Lunes",type:"Full Body A — Piernas + Empuje",exercises:[
+        {name:"Sentadilla Goblet (mancuerna)",sets:"3",reps:"12",rest:"90s",tip:"Espalda recta, talones en el suelo. Aprende el patrón de movimiento. Manos sujetando la mancuerna vertical contra el pecho.",prog:""},
+        {name:"Sentadilla Búlgara (sin peso)",sets:"3",reps:"8 c/pierna",rest:"90s",tip:"Pie trasero apoyado en banco, pie delantero adelantado. Baja controlado. Empieza sin peso para dominar el equilibrio.",prog:"F1: sin peso · F2: con mancuernas · F3: con barra"},
+        {name:"Zancadas hacia delante",sets:"3",reps:"10 c/pierna",rest:"75s",tip:"Paso largo, rodilla delantera no pasa la punta del pie. Tronco erguido.",prog:""},
+        {name:"Press Banca con Barra",sets:"3",reps:"10",rest:"90s",tip:"Escápulas juntas y apretadas contra el banco. Bajada controlada 3 segundos.",prog:""},
+        {name:"Flexiones (progresión)",sets:"3",reps:"10",rest:"75s",tip:"Fase 1: Flexiones inclinadas en banco si no puedes hacer 10 seguidas en el suelo. Objetivo: 3×10 limpias en el suelo.",prog:"F1: inclinadas en banco · F2: suelo normal · F3: arqueras o explosivas"},
+        {name:"Elevaciones laterales (abducción hombro)",sets:"3",reps:"15",rest:"60s",tip:"Brazos ligeramente flexionados, sube hasta la altura del hombro. Movimiento lento y controlado. Clave para la estabilidad articular.",prog:""},
+        {name:"Plancha Frontal",sets:"3",reps:"30s",rest:"60s",tip:"Glúteos apretados, no dejes caer las caderas. Respira.",prog:""},
       ]},
-      {day:"Viernes", type:"Full Body B", exercises:[
-        {name:"Prensa de Piernas",sets:"3",reps:"15",rest:"90s",tip:"Si no hay gym ese día, reemplaza por Zancadas con mancuernas."},
-        {name:"Jalón al Pecho o Dominadas asistidas",sets:"3",reps:"10",rest:"90s",tip:"Objetivo futuro: dominadas con peso corporal sin asistencia."},
-        {name:"Curl de Bíceps Mancuernas",sets:"3",reps:"12",rest:"60s",tip:"Sin balanceo de caderas. Movimiento controlado."},
-        {name:"Extensión de Tríceps Polea",sets:"3",reps:"12",rest:"60s",tip:"Codo fijo pegado al cuerpo, solo mueve el antebrazo."},
-        {name:"Elevaciones de Gemelos",sets:"4",reps:"20",rest:"45s",tip:"Fundamental para un futbolista. Pausa 1 segundo arriba del todo."},
-        {name:"Hip Thrust con Barra",sets:"3",reps:"15",rest:"90s",tip:"Glúteos son clave para el sprint y el disparo. Aprende bien el patrón."},
+      {day:"Miércoles",type:"Full Body B — Tirón + Pies",exercises:[
+        {name:"Dominadas con goma elástica",sets:"4",reps:"6-8",rest:"2min",tip:"Pon la goma en la barra y apoya la rodilla o el pie. Elige una goma que te permita hacer 6-8 reps con buena técnica. AGARRE PRONO (palmas hacia fuera).",prog:"F1: goma gruesa · F2: goma más fina · F3: sin goma"},
+        {name:"Remo con Mancuerna",sets:"3",reps:"10 c/lado",rest:"75s",tip:"Rodilla y mano del mismo lado apoyadas en banco. Codo pegado al cuerpo, aprieta la espalda arriba.",prog:""},
+        {name:"Curl de Bíceps Mancuernas",sets:"3",reps:"12",rest:"60s",tip:"Sin balanceo de caderas. Codo fijo. Movimiento controlado en la bajada.",prog:""},
+        {name:"Extensión de Tríceps Polea",sets:"3",reps:"12",rest:"60s",tip:"Codo pegado al cuerpo y fijo. Solo mueve el antebrazo. Contrae el tríceps abajo del todo.",prog:""},
+        {name:"Elevaciones de gemelos (pie)",sets:"4",reps:"20",rest:"45s",tip:"En un escalón si puedes. Pausa 1 segundo arriba. Baja completamente para estirar el gemelo.",prog:""},
+        {name:"Ejercicio intrínseco de pie — Acortamiento corto",sets:"3",reps:"15",rest:"45s",tip:"Sentado, pie en el suelo. Sin doblar los dedos, intenta 'acortar' el pie llevando la cabeza del metatarso hacia el talón. Activa el arco plantar. Clave para prevenir lesiones de tobillo.",prog:""},
+        {name:"Toallas con los dedos del pie",sets:"3",reps:"20",rest:"30s",tip:"Descalzo, arruga una toalla con los dedos del pie. Alterna pies. Fortalece los flexores de los dedos y el arco plantar.",prog:""},
       ]},
+      {day:"Viernes",type:"Full Body C — Completo",exercises:[
+        {name:"Peso Muerto Rumano",sets:"3",reps:"10",rest:"90s",tip:"Bisagra de cadera, no redondear la espalda baja. Barra o mancuernas. Siente el estiramiento de isquios.",prog:""},
+        {name:"Hip Thrust con Barra",sets:"3",reps:"15",rest:"90s",tip:"Espalda alta apoyada en banco. Empuja con los talones. Contrae glúteos arriba. Clave para el sprint y el disparo.",prog:""},
+        {name:"Press Militar Mancuernas",sets:"3",reps:"12",rest:"75s",tip:"Core activo, no arquear la zona lumbar. Cabeza neutra. Sube las mancuernas hasta arriba del todo.",prog:""},
+        {name:"Pájaros (posterior deltoides)",sets:"3",reps:"15",rest:"60s",tip:"Inclinado hacia delante, mancuernas pequeñas, brazos casi extendidos. Sube los brazos hacia los lados como alas. Trabaja la parte posterior del hombro. Muy importante para equilibrio articular.",prog:""},
+        {name:"Rotación externa con goma (manguito rotador)",sets:"3",reps:"15 c/lado",rest:"45s",tip:"Codo flexionado 90° pegado al cuerpo. Rota el antebrazo hacia fuera contra la resistencia de la goma. Lento y controlado. Prevención de lesiones de hombro.",prog:""},
+        {name:"Elevaciones monopodales de talón",sets:"3",reps:"15 c/pie",rest:"60s",tip:"Con un pie, apoya los dedos en un escalón. Sube hasta la punta del pie. Más difícil que bilaterales. Fortalece gemelo y sóleo de forma más específica.",prog:""},
+        {name:"Fondos en paralelas",sets:"3",reps:"al fallo",rest:"90s",tip:"Tríceps y pecho. Tronco ligeramente inclinado hacia delante para más pectoral. Si no hay paralelas, entre dos sillas.",prog:"F1: con asistencia si necesitas · F2-3: libre"},
+      ]}
     ]
   },
-  2: {
-    name:"Fase 2 — Hipertrofia", emoji:"💪", cls:"ph2",
-    dateRange:"14 Jul – 10 Ago", weeks:"Semanas 4–8",
-    focus:"Máximo estímulo de hipertrofia con split 4 días. En julio los días de oficina son L y X, así que el split se adapta a Mar/Jue/Vie/Sáb.",
+  2:{
+    name:"Fase 2 — Hipertrofia",emoji:"💪",cls:"ph2",
+    dateRange:"14 Jul – 10 Ago",weeks:"Semanas 4–8",
+    focus:"Split 4 días con máximo volumen. Dominadas reduciendo la ayuda de la goma. Sentadilla búlgara con mancuernas. Progresión de carga cada semana.",
     weekDays:[
-      {idx:0,label:"L",name:"Oficina Jul",on:false},
-      {idx:1,label:"M",name:"Piernas",on:true},
-      {idx:2,label:"X",name:"Oficina Jul",on:false},
-      {idx:3,label:"J",name:"Empuje",on:true},
-      {idx:4,label:"V",name:"Tirón",on:true},
-      {idx:5,label:"S",name:"Piernas Iso",on:true},
-      {idx:6,label:"D",name:"Descanso",on:false},
+      {label:"L",name:"Oficina Jul",on:false},{label:"M",name:"Piernas",on:true},
+      {label:"X",name:"Oficina Jul",on:false},{label:"J",name:"Empuje",on:true},
+      {label:"V",name:"Tirón",on:true},{label:"S",name:"Piernas Iso",on:true},{label:"D",name:"Descanso",on:false}
     ],
     workouts:[
-      {day:"Martes — Piernas Cuád.", type:"Piernas — Cuádriceps dominante", exercises:[
-        {name:"Sentadilla con Barra",sets:"4",reps:"8-10",rest:"2min",tip:"Progresión principal. Añade 2.5kg cuando completes todas las reps en las 4 series."},
-        {name:"Prensa de Piernas",sets:"3",reps:"12",rest:"90s",tip:"Complemento a la sentadilla. Más volumen total."},
-        {name:"Extensión de Cuádriceps",sets:"3",reps:"15",rest:"60s",tip:"Aislamiento final. Busca el quemado."},
-        {name:"Elevaciones de Gemelos (pie)",sets:"4",reps:"20",rest:"60s",tip:"Gemelo (gastrocnemio). Rodilla extendida."},
-        {name:"Plancha Lateral",sets:"3",reps:"30s c/lado",rest:"60s",tip:"Estabilidad de cadera, clave para cambios de dirección."},
+      {day:"Martes — Piernas",type:"Piernas — Cuádriceps dominante",exercises:[
+        {name:"Sentadilla con Barra",sets:"4",reps:"8-10",rest:"2min",tip:"Progresión principal. Añade 2.5kg cuando completes todas las reps en las 4 series.",prog:""},
+        {name:"Sentadilla Búlgara con Mancuernas",sets:"3",reps:"10 c/pierna",rest:"90s",tip:"Ahora con mancuernas en cada mano. Controla la bajada 3 segundos. Rodilla trasera casi toca el suelo.",prog:"F1: sin peso · F2: mancuernas · F3: barra"},
+        {name:"Zancadas caminando con mancuernas",sets:"3",reps:"12 c/pierna",rest:"90s",tip:"Avanza dando zancadas alternando piernas. Tronco erguido en todo momento.",prog:""},
+        {name:"Extensión de Cuádriceps",sets:"3",reps:"15",rest:"60s",tip:"Aislamiento final. Busca el quemado. Pausa 1 segundo arriba.",prog:""},
+        {name:"Elevaciones de gemelos (pie)",sets:"4",reps:"20",rest:"60s",tip:"En escalón. Baja completamente para máximo estiramiento.",prog:""},
+        {name:"Elevaciones monopodales de talón",sets:"3",reps:"12 c/pie",rest:"60s",tip:"Con peso en la mano del mismo lado que el pie que trabaja.",prog:""},
+        {name:"Plancha Lateral",sets:"3",reps:"35s c/lado",rest:"60s",tip:"Estabilidad de cadera. Clave para cambios de dirección en el campo.",prog:""},
       ]},
-      {day:"Jueves — Empuje", type:"Empuje — Pecho y Hombros", exercises:[
-        {name:"Press Banca Barra",sets:"4",reps:"8-10",rest:"2min",tip:"Progresión principal de empuje horizontal."},
-        {name:"Press Inclinado Mancuernas",sets:"3",reps:"10-12",rest:"90s",tip:"Parte superior del pectoral. Ángulo 30-45°."},
-        {name:"Aperturas Peck-Deck o Cables",sets:"3",reps:"14",rest:"60s",tip:"Contracción máxima en el centro del pecho."},
-        {name:"Press Militar Barra",sets:"3",reps:"8",rest:"90s",tip:"Glúteos apretados, core firme. No arquear la zona lumbar."},
-        {name:"Elevaciones Laterales",sets:"3",reps:"15",rest:"60s",tip:"Peso ligero, control total. Brazos a 90° en la cima."},
-        {name:"Fondos en Paralelas",sets:"3",reps:"al fallo",rest:"90s",tip:"Pecho ligeramente inclinado hacia delante para más pectoral."},
+      {day:"Jueves — Empuje",type:"Empuje — Pecho, Hombros y Tríceps",exercises:[
+        {name:"Press Banca Barra",sets:"4",reps:"8-10",rest:"2min",tip:"Progresión principal de empuje horizontal. Escápulas siempre juntas.",prog:""},
+        {name:"Press Inclinado Mancuernas",sets:"3",reps:"10-12",rest:"90s",tip:"Banco a 30-45°. Parte superior del pectoral.",prog:""},
+        {name:"Flexiones arqueras (archer push-ups)",sets:"3",reps:"6 c/lado",rest:"90s",tip:"Posición de flexión amplia. Baja hacia un lado manteniendo el otro brazo casi extendido. Progresión hacia la flexión a una mano.",prog:"F2: arqueras · F3: explosivas o a una mano"},
+        {name:"Press Militar Barra",sets:"3",reps:"8",rest:"90s",tip:"De pie o sentado. Core firme, glúteos apretados. No arquear la zona lumbar.",prog:""},
+        {name:"Elevaciones laterales (abducción)",sets:"4",reps:"15",rest:"60s",tip:"2 series normales + 2 series lentas (3s subida, 3s bajada). Máxima activación del deltoides medio.",prog:""},
+        {name:"Pájaros con mancuernas",sets:"3",reps:"15",rest:"60s",tip:"Deltoides posterior. Inclinado, brazos casi extendidos, sube hacia los lados.",prog:""},
+        {name:"Extensión de tríceps en copa (mancuerna)",sets:"3",reps:"12",rest:"75s",tip:"De pie o sentado. Mancuerna con las dos manos por encima de la cabeza. Baja hasta la nuca. Codo fijo.",prog:""},
+        {name:"Fondos en paralelas con peso",sets:"3",reps:"8-10",rest:"90s",tip:"Si puedes hacer 12+ fondos sin peso, añade lastre con un cinturón o mancuerna entre piernas.",prog:""},
       ]},
-      {day:"Viernes — Tirón", type:"Tirón — Espalda y Bíceps", exercises:[
-        {name:"Dominadas (o jalón al pecho)",sets:"4",reps:"6-10",rest:"2min",tip:"Rey de la espalda. Cuando llegues a 10 seguidas, añade lastre."},
-        {name:"Remo en Barra",sets:"4",reps:"8",rest:"90s",tip:"Progresión principal de tirón horizontal."},
-        {name:"Remo en Polea Baja",sets:"3",reps:"12",rest:"75s",tip:"Codos hacia atrás, pecho alto, no redondear espalda."},
-        {name:"Curl Bíceps Barra EZ",sets:"3",reps:"10",rest:"75s",tip:"Movimiento limpio, sin balanceo."},
-        {name:"Curl Concentrado Mancuerna",sets:"3",reps:"12 c/lado",rest:"60s",tip:"Máxima contracción arriba del todo."},
-        {name:"Face Pulls Polea",sets:"3",reps:"15",rest:"60s",tip:"Salud del manguito rotador. No lo saltes aunque parezca secundario."},
+      {day:"Viernes — Tirón",type:"Tirón — Espalda y Bíceps",exercises:[
+        {name:"Dominadas con goma más fina",sets:"4",reps:"6-8",rest:"2min",tip:"Reducir la asistencia respecto a Fase 1. Si en F1 usabas una goma gruesa, ahora usa una más fina. Objetivo: hacer alguna sin goma al final de la fase.",prog:"F1: goma gruesa · F2: goma fina · F3: sin goma"},
+        {name:"Remo en Barra",sets:"4",reps:"8",rest:"90s",tip:"Progresión principal de tirón horizontal. Espalda plana, codos hacia atrás.",prog:""},
+        {name:"Remo en Polea Baja",sets:"3",reps:"12",rest:"75s",tip:"Codos hacia atrás, pecho alto. No redondear la espalda.",prog:""},
+        {name:"Curl Bíceps Barra EZ",sets:"3",reps:"10",rest:"75s",tip:"Movimiento limpio, sin balanceo de torso.",prog:""},
+        {name:"Curl martillo mancuernas",sets:"3",reps:"12",rest:"60s",tip:"Agarre neutro (pulgares hacia arriba). Trabaja braquiorradial y braquial además del bíceps.",prog:""},
+        {name:"Face Pulls Polea",sets:"3",reps:"15",rest:"60s",tip:"Polea alta. Tira hacia la cara separando las manos. Trabaja deltoides posterior y manguito rotador. No saltarse nunca.",prog:""},
+        {name:"Rotación externa con goma",sets:"3",reps:"15 c/lado",rest:"45s",tip:"Manguito rotador. Prevención de lesiones de hombro imprescindible para futbolistas.",prog:""},
       ]},
-      {day:"Sábado — Piernas Iso.", type:"Piernas — Isquiotibiales y Glúteos", exercises:[
-        {name:"Peso Muerto Convencional",sets:"4",reps:"6-8",rest:"2min",tip:"El ejercicio más completo. Técnica antes que peso siempre."},
-        {name:"Hip Thrust con Barra",sets:"4",reps:"10-12",rest:"90s",tip:"Los glúteos son el motor del futbolista. Progresa en peso."},
-        {name:"Curl Femoral Tumbado",sets:"3",reps:"12",rest:"75s",tip:"Prevención de lesiones de isquiotibiales. Muy importante para futbolistas."},
-        {name:"Zancadas con Mancuernas",sets:"3",reps:"10 c/pierna",rest:"90s",tip:"Equilibrio y coordinación unilateral."},
-        {name:"Elevaciones de Gemelos Sentado",sets:"4",reps:"20",rest:"60s",tip:"Trabaja el sóleo. Diferente al gemelo de pie, rodilla flexionada."},
-      ]},
+      {day:"Sábado — Piernas Iso.",type:"Piernas — Isquiotibiales, Glúteos y Pies",exercises:[
+        {name:"Peso Muerto Convencional",sets:"4",reps:"6-8",rest:"2min",tip:"El ejercicio más completo. Técnica siempre antes que peso.",prog:""},
+        {name:"Hip Thrust con Barra",sets:"4",reps:"10-12",rest:"90s",tip:"Los glúteos son el motor del futbolista. Progresa en peso cada semana.",prog:""},
+        {name:"Curl Femoral Tumbado",sets:"3",reps:"12",rest:"75s",tip:"Prevención de lesiones de isquiotibiales. Muy importante para futbolistas. Bajada muy controlada.",prog:""},
+        {name:"Sentadilla Búlgara con Mancuernas (pesada)",sets:"3",reps:"8 c/pierna",rest:"2min",tip:"Segunda sesión de búlgara a la semana. Aquí con más peso y menos reps. Fuerza unilateral.",prog:""},
+        {name:"Elevaciones de gemelos sentado",sets:"4",reps:"20",rest:"60s",tip:"Trabaja el sóleo (rodilla flexionada). Diferente al gemelo de pie.",prog:""},
+        {name:"Acortamiento corto de pie",sets:"3",reps:"15 c/pie",rest:"45s",tip:"Ahora de pie. Activa el arco plantar mientras estás de pie. Más difícil que sentado.",prog:""},
+        {name:"Caminar sobre talones y puntas",sets:"3",reps:"20m c/u",rest:"45s",tip:"20m sobre los talones + 20m sobre las puntas. Activa todos los músculos del pie y tobillo. Ideal para calentar o al final.",prog:""},
+      ]}
     ]
   },
-  3: {
-    name:"Fase 3 — Potencia", emoji:"⚡", cls:"ph3",
-    dateRange:"11 Ago – 1 Sep", weeks:"Semanas 9–11",
-    focus:"Integrar la fuerza ganada con potencia explosiva específica de fútbol. Agosto = teletrabajo = gym a las 15:30h.",
+  3:{
+    name:"Fase 3 — Potencia",emoji:"⚡",cls:"ph3",
+    dateRange:"11 Ago – 1 Sep",weeks:"Semanas 9–11",
+    focus:"Integrar la fuerza con potencia explosiva. Dominadas sin goma. Sentadilla búlgara con barra. Agosto = teletrabajo = gym a las 15:30h cada día.",
     weekDays:[
-      {idx:0,label:"L",name:"Fuerza Inf.",on:true},
-      {idx:1,label:"M",name:"Técnica ftbl",on:false},
-      {idx:2,label:"X",name:"Fuerza Sup.",on:true},
-      {idx:3,label:"J",name:"Descanso",on:false},
-      {idx:4,label:"V",name:"Circuito",on:true},
-      {idx:5,label:"S",name:"Fútbol",on:true},
-      {idx:6,label:"D",name:"Descanso",on:false},
+      {label:"L",name:"Fuerza Inf.",on:true},{label:"M",name:"Técnica",on:false},
+      {label:"X",name:"Fuerza Sup.",on:true},{label:"J",name:"Descanso",on:false},
+      {label:"V",name:"Circuito",on:true},{label:"S",name:"Fútbol",on:true},{label:"D",name:"Descanso",on:false}
     ],
     workouts:[
-      {day:"Lunes — Fuerza Inf.", type:"Fuerza + Potencia Tren Inferior", exercises:[
-        {name:"Sentadilla con Barra (pesada)",sets:"5",reps:"5",rest:"3min",tip:"Peso de trabajo real. Aquí cosecharás lo sembrado en la Fase 2."},
-        {name:"Saltos al Cajón (Box Jump)",sets:"4",reps:"5",rest:"2min",tip:"Explosividad. Aterriza suave con rodillas flexionadas. Baja caminando."},
-        {name:"Sprints 20m × 6",sets:"1",reps:"6 sprints",rest:"90s entre sprints",tip:"En exterior o pista. Calidad total en cada repetición. No acumular fatiga."},
-        {name:"Peso Muerto Rumano",sets:"3",reps:"8",rest:"90s",tip:"Mantener base de fuerza isquiotibiales."},
+      {day:"Lunes — Fuerza Inf.",type:"Fuerza + Potencia Tren Inferior",exercises:[
+        {name:"Sentadilla con Barra (pesada)",sets:"5",reps:"5",rest:"3min",tip:"Aquí cosecharás lo sembrado. Peso de trabajo real, técnica perfecta.",prog:""},
+        {name:"Sentadilla Búlgara con Barra",sets:"3",reps:"6 c/pierna",rest:"2min",tip:"Progresión final: ahora con barra en la espalda. Máxima fuerza unilateral. Controla la bajada.",prog:"F1: sin peso · F2: mancuernas · F3: barra"},
+        {name:"Zancadas con salto (lunge jump)",sets:"4",reps:"6 c/pierna",rest:"90s",tip:"Zancada explosiva alternando piernas en el aire. Potencia de piernas específica para fútbol.",prog:""},
+        {name:"Saltos al cajón (Box Jump)",sets:"4",reps:"5",rest:"2min",tip:"Explosividad. Aterriza suave con rodillas flexionadas. Baja caminando, no saltes hacia abajo.",prog:""},
+        {name:"Sprints 20m × 6",sets:"1",reps:"6 sprints",rest:"90s entre sprints",tip:"Calidad total. No hagas sprints si estás fatigado muscularmente.",prog:""},
+        {name:"Elevaciones monopodales lastradas",sets:"3",reps:"10 c/pie",rest:"75s",tip:"Con mancuerna. Máxima fuerza de gemelo y sóleo para el sprint.",prog:""},
       ]},
-      {day:"Miércoles — Fuerza Sup.", type:"Fuerza + Potencia Tren Superior", exercises:[
-        {name:"Press Banca Barra (pesado)",sets:"5",reps:"5",rest:"3min",tip:"Intensidad alta. Cosechar fuerza del ciclo anterior."},
-        {name:"Dominadas con Lastre",sets:"4",reps:"5",rest:"2min",tip:"Si ya haces 10 seguidas, añade 5-10kg de lastre."},
-        {name:"Lanzamiento Balón Medicinal (pared)",sets:"4",reps:"8",rest:"90s",tip:"Simula la potencia del pase y el disparo. Explosividad de core."},
-        {name:"Remo Barra",sets:"3",reps:"8",rest:"90s",tip:"Mantener base de fuerza de espalda."},
-        {name:"Press Militar",sets:"3",reps:"8",rest:"90s",tip:"Hombros fuertes para protección articular en el fútbol."},
+      {day:"Miércoles — Fuerza Sup.",type:"Fuerza + Potencia Tren Superior",exercises:[
+        {name:"Press Banca Barra (pesado)",sets:"5",reps:"5",rest:"3min",tip:"Intensidad alta. Cosechar lo trabajado.",prog:""},
+        {name:"Dominadas sin goma",sets:"4",reps:"6-8",rest:"2min",tip:"¡Sin asistencia! Si no puedes hacer 6 seguidas aún, sigue con goma muy fina. El objetivo es llegar aquí.",prog:"F1: goma gruesa · F2: goma fina · F3: libre 🎯"},
+        {name:"Flexiones explosivas",sets:"4",reps:"8",rest:"90s",tip:"Despega las manos del suelo en cada repetición. Máxima potencia de empuje.",prog:""},
+        {name:"Lanzamiento balón medicinal (pared)",sets:"4",reps:"8",rest:"90s",tip:"Simula la potencia del pase y el disparo. Lanza con máxima explosividad.",prog:""},
+        {name:"Press Militar pesado",sets:"3",reps:"6",rest:"2min",tip:"Fuerza máxima de hombros.",prog:""},
+        {name:"Elevaciones laterales + pájaros superserie",sets:"3",reps:"12+12",rest:"90s",tip:"Sin descanso entre los dos ejercicios. Lateral (deltoides medio) + pájaro (deltoides posterior). Hombro completo.",prog:""},
+        {name:"Extensión tríceps copa + fondos con peso superserie",sets:"3",reps:"10+8",rest:"90s",tip:"Copa para aislar el tríceps + fondos para fuerza compuesta. Sin descanso entre ellos.",prog:""},
       ]},
-      {day:"Viernes — Circuito", type:"Circuito Metabólico + Core", exercises:[
-        {name:"Sentadillas con salto",sets:"4",reps:"8",rest:"60s",tip:"Aterriza suave. Rodillas en línea con pies. Máxima explosividad en el salto."},
-        {name:"Flexiones explosivas",sets:"4",reps:"8",rest:"60s",tip:"Despega las manos del suelo. Potencia en el empuje."},
-        {name:"Zancadas con rotación de tronco",sets:"3",reps:"10 c/lado",rest:"75s",tip:"Cuerpo y brazos rotan hacia la pierna adelantada. Simula el regate."},
-        {name:"Plancha con toque de hombros",sets:"3",reps:"20 toques",rest:"60s",tip:"Caderas quietas. No compensar con el tronco."},
-        {name:"Burpees",sets:"4",reps:"8",rest:"90s",tip:"Acondicionamiento específico. Calidad sobre cantidad."},
-        {name:"Rueda de abdominales",sets:"3",reps:"10",rest:"75s",tip:"Empieza de rodillas. Objetivo final: desde de pie."},
+      {day:"Viernes — Circuito",type:"Circuito Metabólico + Core",exercises:[
+        {name:"Sentadillas con salto",sets:"4",reps:"8",rest:"60s",tip:"Aterriza suave. Explosividad máxima en cada salto.",prog:""},
+        {name:"Flexiones arqueras o a una mano",sets:"4",reps:"6 c/lado",rest:"75s",tip:"La variante más avanzada. Si no puedes, arqueras siguen siendo una gran opción.",prog:""},
+        {name:"Zancadas con rotación de tronco",sets:"3",reps:"10 c/lado",rest:"75s",tip:"Simula el regate. Cuerpo y brazos rotan hacia la pierna adelantada.",prog:""},
+        {name:"Plancha con toque de hombros",sets:"3",reps:"20 toques",rest:"60s",tip:"Caderas quietas. No compensar con el tronco.",prog:""},
+        {name:"Burpees",sets:"4",reps:"8",rest:"90s",tip:"Acondicionamiento específico de fútbol. Calidad sobre cantidad.",prog:""},
+        {name:"Rueda de abdominales",sets:"3",reps:"10-12",rest:"75s",tip:"Desde de pie si puedes. Desde rodillas si todavía no. El core más funcional que hay.",prog:""},
       ]},
-      {day:"Sábado — Fútbol", type:"Técnica Fútbol + Trabajo Específico", exercises:[
-        {name:"Conducción técnica con conos",sets:"3",reps:"4 series 20m",rest:"60s",tip:"Velocidad + control. Simula situaciones de partido."},
-        {name:"Regate 1v1 (espejo o con compañero)",sets:"4",reps:"3min",rest:"90s",tip:"Trabajo de decisión y velocidad de cambio de dirección."},
-        {name:"Tiros a portería (distancia)",sets:"1",reps:"30 disparos",rest:"según ritmo",tip:"Fuerza explosiva de pierna + precisión técnica."},
-        {name:"Escalera de agilidad",sets:"5",reps:"15m",rest:"60s",tip:"Coordinación, frecuencia de pasos y cambios de dirección."},
-      ]},
+      {day:"Sábado — Fútbol",type:"Técnica Fútbol + Trabajo Específico",exercises:[
+        {name:"Conducción técnica con conos",sets:"3",reps:"4 series 20m",rest:"60s",tip:"Velocidad + control. Simula situaciones de partido.",prog:""},
+        {name:"Regate 1v1 (espejo o compañero)",sets:"4",reps:"3min",rest:"90s",tip:"Velocidad de decisión y cambios de dirección.",prog:""},
+        {name:"Tiros a portería (distancia)",sets:"1",reps:"30 disparos",rest:"según ritmo",tip:"Fuerza explosiva de pierna + precisión técnica.",prog:""},
+        {name:"Escalera de agilidad",sets:"5",reps:"15m",rest:"60s",tip:"Coordinación y frecuencia de pasos.",prog:""},
+      ]}
     ]
   }
 };
 
-const NUTRITION = {
+const NUTRITION={
   principles:[
     {icon:"🥩",title:"Proteína — Prioridad #1",text:"2g por kg de peso al día. Si pesas 75kg → 150g de proteína. Sin esto no hay músculo."},
     {icon:"🍚",title:"Carbohidratos — Tu combustible",text:"Come más carbos los días de entreno, menos los de descanso. Arroz, avena, patata, pasta integral."},
@@ -524,25 +437,16 @@ const NUTRITION = {
   ]
 };
 
-// ============================================================
-// STATE
-// ============================================================
-let currentPhase = 1;
-let currentWorkout = 0;
-let currentNutr = 'principles';
-let currentMeal = 'training';
-let entries = JSON.parse(localStorage.getItem('pt_entries') || '[]');
-let deferredPrompt = null;
+let currentPhase=1,currentWorkout=0,currentNutr='principles',currentMeal='training';
+let entries=JSON.parse(localStorage.getItem('pt_entries')||'[]');
+let deferredPrompt=null;
 
-// ============================================================
-// TABS
-// ============================================================
-function showTab(name) {
-  ['plan','gym','nutri','horario','stats'].forEach(t => {
-    document.getElementById('tab-'+t).style.display = t===name?'block':'none';
+function showTab(name){
+  ['plan','gym','nutri','horario','stats'].forEach(t=>{
+    document.getElementById('tab-'+t).style.display=t===name?'block':'none';
   });
-  document.querySelectorAll('.nav-btn').forEach((b,i) => {
-    b.classList.toggle('active', ['plan','gym','nutri','horario','stats'][i]===name);
+  document.querySelectorAll('.nav-btn').forEach((b,i)=>{
+    b.classList.toggle('active',['plan','gym','nutri','horario','stats'][i]===name);
   });
   if(name==='gym') renderPhase(currentPhase);
   if(name==='nutri') renderNutr(currentNutr);
@@ -550,27 +454,16 @@ function showTab(name) {
   updateProgress();
 }
 
-function goPhase(p){
-  showTab('gym');
-  selectPhase(p);
-}
+function goPhase(p){showTab('gym');selectPhase(p);}
 
-// ============================================================
-// PROGRESS
-// ============================================================
 function updateProgress(){
-  const start = new Date('2026-06-23');
-  const end = new Date('2026-09-01');
-  const now = new Date();
-  const pct = Math.min(100, Math.max(0, (now-start)/(end-start)*100));
-  document.getElementById('progress-fill').style.width = pct+'%';
+  const start=new Date('2026-06-23'),end=new Date('2026-09-01'),now=new Date();
+  const pct=Math.min(100,Math.max(0,(now-start)/(end-start)*100));
+  document.getElementById('progress-fill').style.width=pct+'%';
 }
 
-// ============================================================
-// PHASES
-// ============================================================
 function selectPhase(p){
-  currentPhase=p; currentWorkout=0;
+  currentPhase=p;currentWorkout=0;
   [1,2,3].forEach(i=>{
     const btn=document.getElementById('pt'+i);
     btn.className='phase-tab'+(i===p?' active-'+i:'');
@@ -596,13 +489,20 @@ function renderPhase(p){
   const w=ph.workouts[currentWorkout];
   let exHTML='';
   w.exercises.forEach((ex,i)=>{
+    const hasProg=ex.prog&&ex.prog.length>0;
     exHTML+=`<div class="ex-card">
       <div class="ex-header" onclick="toggleEx(this)">
         <div class="ex-num">${i+1}</div>
-        <div style="flex:1"><div class="ex-name">${ex.name}</div><div class="ex-meta">${ex.sets} series × ${ex.reps} · descanso ${ex.rest}</div></div>
+        <div style="flex:1">
+          <div class="ex-name">${ex.name}</div>
+          <div class="ex-meta">${ex.sets} series × ${ex.reps} · descanso ${ex.rest}</div>
+        </div>
         <span class="ex-arrow">▼</span>
       </div>
-      ${ex.tip?`<div class="ex-tip">💡 ${ex.tip}</div>`:''}
+      ${(ex.tip||hasProg)?`<div class="ex-tip">
+        ${hasProg?`<div class="prog-badge prog-f${p}">📈 Progresión: ${ex.prog}</div>`:''}
+        ${ex.tip?`💡 ${ex.tip}`:''}
+      </div>`:''}
     </div>`;
   });
 
@@ -619,10 +519,7 @@ function renderPhase(p){
   `;
 }
 
-function selectWorkout(i){
-  currentWorkout=i;
-  renderPhase(currentPhase);
-}
+function selectWorkout(i){currentWorkout=i;renderPhase(currentPhase);}
 
 function toggleEx(header){
   const tip=header.nextElementSibling;
@@ -632,13 +529,10 @@ function toggleEx(header){
   arrow.classList.toggle('open');
 }
 
-// ============================================================
-// NUTRITION
-// ============================================================
-function selectNutr(tab){
+function selectNutr(tab,btn){
   currentNutr=tab;
   document.querySelectorAll('.nt-btn').forEach(b=>b.classList.remove('active'));
-  event.target.classList.add('active');
+  if(btn) btn.classList.add('active');
   renderNutr(tab);
 }
 
@@ -659,39 +553,27 @@ function renderNutr(tab){
         <div style="flex:1">
           <div class="meal-name">${m.meal}</div>
           <div class="meal-foods">${m.foods}</div>
-          <div class="meal-badges">
-            <span class="badge-kcal">${m.kcal} kcal</span>
-            <span class="badge-prot">🥩 ${m.prot}</span>
-          </div>
+          <div class="meal-badges"><span class="badge-kcal">${m.kcal} kcal</span><span class="badge-prot">🥩 ${m.prot}</span></div>
         </div>
       </div>`;
     });
-    if(currentMeal==='training'){
-      html+=`<div class="info-box info-yellow" style="margin-top:12px">⚡ <strong>Total día entreno:</strong> ~2.750 kcal · ~194g proteína. Ajusta cantidades según tu peso.</div>`;
-    }
+    if(currentMeal==='training') html+=`<div class="info-box info-yellow" style="margin-top:12px">⚡ <strong>Total día entreno:</strong> ~2.750 kcal · ~194g proteína.</div>`;
   } else {
     NUTRITION.supplements.forEach(s=>{
       const cls=s.priority==='Esencial'?'badge-essential':s.priority==='Muy recomendable'?'badge-high':'badge-med';
-      html+=`<div class="suppl">
-        <div class="suppl-head"><span class="suppl-name">${s.name}</span><span class="${cls}">${s.priority}</span></div>
-        <div class="suppl-when">🕐 ${s.when}</div>
-        <div class="suppl-note">${s.note}</div>
-      </div>`;
+      html+=`<div class="suppl"><div class="suppl-head"><span class="suppl-name">${s.name}</span><span class="${cls}">${s.priority}</span></div><div class="suppl-when">🕐 ${s.when}</div><div class="suppl-note">${s.note}</div></div>`;
     });
   }
   document.getElementById('nutr-content').innerHTML=html;
 }
 
-function selectMeal(type, btn){
+function selectMeal(type,btn){
   currentMeal=type;
   document.querySelectorAll('.mt-btn').forEach(b=>{b.className='mt-btn'});
-  btn.className='mt-btn active-'+( type==='training'?'train':'rest');
+  btn.className='mt-btn active-'+(type==='training'?'train':'rest');
   renderNutr('meals');
 }
 
-// ============================================================
-// STATS / PROGRESS
-// ============================================================
 function saveEntry(){
   const w=document.getElementById('inp-weight').value;
   const n=document.getElementById('inp-note').value;
@@ -709,66 +591,44 @@ function renderStats(){
   const start=withWeight.length?withWeight[withWeight.length-1].weight:null;
   const current=withWeight.length?withWeight[0].weight:null;
   const gained=start&&current?(current-start).toFixed(1):0;
-
   document.getElementById('stat-start').textContent=start?start+' kg':'—';
   document.getElementById('stat-current').textContent=current?current+' kg':'—';
   document.getElementById('stat-gained').textContent=(gained>0?'+':'')+gained+' kg';
-
   let html='';
   if(entries.length===0){
     html='<div class="info-box info-blue">Aún no has registrado ningún peso. ¡Empieza el 23 de junio con tu peso inicial!</div>';
   } else {
     entries.forEach(e=>{
-      html+=`<div class="entry-row">
-        <div><div class="entry-date">${e.date}</div>${e.note?`<div class="entry-note-text">${e.note}</div>`:''}</div>
-        <div class="entry-weight">${e.weight?e.weight+' kg':'—'}</div>
-      </div>`;
+      html+=`<div class="entry-row"><div><div class="entry-date">${e.date}</div>${e.note?`<div class="entry-note-text">${e.note}</div>`:''}</div><div class="entry-weight">${e.weight?e.weight+' kg':'—'}</div></div>`;
     });
   }
   document.getElementById('entries-list').innerHTML=html;
 }
 
-// ============================================================
-// PWA INSTALL
-// ============================================================
-window.addEventListener('beforeinstallprompt', e => {
-  e.preventDefault();
-  deferredPrompt = e;
-  const banner = document.getElementById('install-banner');
-  banner.classList.add('show');
+window.addEventListener('beforeinstallprompt',e=>{
+  e.preventDefault();deferredPrompt=e;
+  document.getElementById('install-banner').classList.add('show');
 });
-
 function doInstall(){
-  if(deferredPrompt){
-    deferredPrompt.prompt();
-    deferredPrompt.userChoice.then(()=>{ deferredPrompt=null; dismissInstall(); });
-  }
+  if(deferredPrompt){deferredPrompt.prompt();deferredPrompt.userChoice.then(()=>{deferredPrompt=null;dismissInstall();});}
 }
+function dismissInstall(){document.getElementById('install-banner').classList.remove('show');}
 
-function dismissInstall(){
-  document.getElementById('install-banner').classList.remove('show');
-}
-
-// iOS install hint (Safari doesn't support beforeinstallprompt)
-function isIOS(){ return /iphone|ipad|ipod/i.test(navigator.userAgent); }
-function isInStandaloneMode(){ return window.navigator.standalone===true; }
-if(isIOS() && !isInStandaloneMode()){
+function isIOS(){return /iphone|ipad|ipod/i.test(navigator.userAgent);}
+function isInStandaloneMode(){return window.navigator.standalone===true;}
+if(isIOS()&&!isInStandaloneMode()){
   setTimeout(()=>{
     const banner=document.getElementById('install-banner');
-    banner.innerHTML=`<span>📲 Pulsa <strong>Compartir → Añadir a inicio</strong> para instalar</span><button id="install-dismiss" onclick="dismissInstall()" style="background:none;border:none;color:#94a3b8;font-size:18px;cursor:pointer;margin-left:auto">✕</button>`;
+    banner.innerHTML=`<span>📲 Pulsa <strong>Compartir → Añadir a inicio</strong> para instalar</span><button onclick="dismissInstall()" style="background:none;border:none;color:#94a3b8;font-size:18px;cursor:pointer;margin-left:auto">✕</button>`;
     banner.classList.add('show');
-    setTimeout(()=>banner.classList.remove('show'), 8000);
-  }, 2000);
+    setTimeout(()=>banner.classList.remove('show'),8000);
+  },2000);
 }
 
-// Service Worker
 if('serviceWorker' in navigator){
-  window.addEventListener('load', ()=>{
-    navigator.serviceWorker.register('./sw.js').catch(()=>{});
-  });
+  window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
 }
 
-// Init
 updateProgress();
 renderStats();
 </script>
